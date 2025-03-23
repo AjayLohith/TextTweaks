@@ -53,4 +53,4 @@
 
 ### Tailwind CSS – Styling
 
-### Vercel – Deployment
+Vercel – Deployment
