@@ -4,53 +4,53 @@
 
 # Features
 
-### Convert Case: Instantly change text to UPPERCASE, lowercase, or Title Case.
+Convert Case: Instantly change text to UPPERCASE, lowercase, or Title Case.
 
-### Remove Extra Spaces: Clean up text by removing multiple spaces.
+Remove Extra Spaces: Clean up text by removing multiple spaces.
 
-### Reverse Text: Flip text backward for special applications.
+Reverse Text: Flip text backward for special applications.
 
-### Clear Text: Erase all content with a single click.
+Clear Text: Erase all content with a single click.
 
-### User-Friendly Interface: Simple, clutter-free design for a seamless experience.
+User-Friendly Interface: Simple, clutter-free design for a seamless experience.
 
-### Instant Processing: See changes applied immediately.
+Instant Processing: See changes applied immediately.
 
 # Installation
 
 ## To run TextTweaks locally, follow these steps:
 
-## Clone the repository:
+### Clone the repository:
 
-### git clone https://github.com/your-username/texttweaks.git
-### cd texttweaks
+git clone https://github.com/your-username/texttweaks.git
+cd texttweaks
 
 # Install dependencies:
 
-### npm install
+npm install
 
-### Start the development server:
+Start the development server:
 
-### npm run dev
+npm run dev
 
-### Open your browser and visit http://localhost:3000
+Open your browser and visit http://localhost:3000
 
 # Deployment
 
 ## TextTweaks is hosted on Vercel. To deploy your own version:
 
-### Push your project to GitHub.
+Push your project to GitHub.
 
-### Connect your repository to Vercel.
+Connect your repository to Vercel.
 
-### Deploy the project with Vercel's one-click deployment.
+Deploy the project with Vercel's one-click deployment.
 
 # Technologies Used
 
-### React.js – Frontend framework
+React.js – Frontend framework
 
-### Vite – Fast build tool
+Vite – Fast build tool
 
-### Tailwind CSS – Styling
+Tailwind CSS – Styling
 
 Vercel – Deployment
