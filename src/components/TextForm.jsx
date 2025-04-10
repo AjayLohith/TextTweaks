@@ -41,7 +41,6 @@ export default function TextForm(props) {
     
     const handleOnChange = (event) => {
         setText(event.target.value);
-        
     };
     
     const [text, setText] = useState('');
@@ -53,7 +52,7 @@ export default function TextForm(props) {
             </div>
             <div className="mb-3">
                 <textarea 
-                    className="form-control" 
+                    className="form-control w-100" 
                     value={text} 
                     onChange={handleOnChange} 
                     style={{ 
@@ -68,17 +67,47 @@ export default function TextForm(props) {
                     rows="9"
                 ></textarea>
                <p></p>
-                <button className="custom-btn mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
-                <button className="custom-btn mx-1" onClick={handleLoClick}>Convert to Lowercase</button>
-                <button className="custom-btn mx-1" onClick={handleRemoveSpaces}>Remove Spaces</button>
-                <button className="custom-btn mx-1" onClick={handleClearClick}>Clear</button>
-                <button className="custom-btn mx-1" onClick={handleRevrse}>Reverse Text</button>
-                <button className="custom-btn mx-1" onClick={handleLorem}>Random Text</button>
+                <div className="d-flex flex-wrap gap-2 button-container">
+                    <button className="custom-btn flex-grow-1" onClick={handleUpClick}>Uppercase</button>
+                    <button className="custom-btn flex-grow-1" onClick={handleLoClick}>Lowercase</button>
+                    <button className="custom-btn flex-grow-1" onClick={handleRemoveSpaces}>Remove Spaces</button>
+                    <button className="custom-btn flex-grow-1" onClick={handleClearClick}>Clear</button>
+                    <button className="custom-btn flex-grow-1" onClick={handleRevrse}>Reverse</button>
+                    <button className="custom-btn flex-grow-1" onClick={handleLorem}>Random Text</button>
+                </div>
 
+                {/* Add mobile-friendly styles */}
+                <style jsx>{`
+                    @media (max-width: 768px) {
+                        .button-container {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 8px;
+                        }
+                        
+                        /* Ensure full width on smaller devices */
+                        @media (max-width: 576px) {
+                            .button-container {
+                                grid-template-columns: 1fr;
+                            }
+                        }
+                        
+                        .custom-btn {
+                            margin-bottom: 8px;
+                            width: 100%;
+                            padding: 12px 10px;
+                            font-size: 0.95rem;
+                        }
+                        
+                        textarea.form-control {
+                            min-height: 200px;
+                        }
+                    }
+                `}</style>
             </div>
             <div className="container mb-3" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
-                <h2><b>Text Summary</b></h2>
-                <p>{text.split(" ").filter(word => word !== "").length} words and {text.length} characters</p>
+                <h2 className="h4"><b>Text Summary</b></h2>
+                <p className="mb-0">{text.split(" ").filter(word => word !== "").length} words and {text.length} characters</p>
             </div>
         </div>
         </>

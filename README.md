@@ -1,12 +1,42 @@
-# React + Vite
+# TextTweaks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based text manipulation application that allows users to transform text in various ways.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Convert text to uppercase or lowercase
+- Remove extra spaces
+- Reverse text
+- Generate random sample text
+- Dark mode / Light mode toggle
+- Mobile responsive design
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- React Router
+- Bootstrap 5
+- CSS3
+- Vite build tool
+
+## Mobile Compatibility
+
+This application is fully responsive and optimized for mobile devices:
+
+- Proper viewport configuration
+- Touch-friendly button sizes
+- Responsive layouts for different screen sizes
+- Mobile navigation optimizations
+- Improved text input experience on mobile
+- Grid-based layouts for small screens
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Build for production: `npm run build`
+
+## License
+
+This project is open source and available under the MIT License.
