@@ -1,6 +1,6 @@
 # TextTweaks
 
-<<<<<<< HEAD
+
 A React-based text manipulation application that allows users to transform text in various ways.
 
 ## Features
