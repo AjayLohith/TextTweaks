@@ -85,7 +85,7 @@ export default function NavBar(props) {
                 <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
                     <ul className="navbar-nav" style={{ columnGap: '10px' }}>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/" onClick={handleNavLinkClick}>Home</Link>
+                            <Link className="nav-link active mx-4" to="/" onClick={handleNavLinkClick}>Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link active" to="/about" onClick={handleNavLinkClick}>About</Link>
